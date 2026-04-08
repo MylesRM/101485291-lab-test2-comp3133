@@ -18,12 +18,12 @@ This Angular application displays Harry Potter data including characters, houses
 
 ---
 
-## 🌐 Live Demo
+## Live Demo
 
 https://101485291-lab-test2-comp3133.vercel.app/
 ---
 
-## 📂 GitHub Repository
+## GitHub Repository
 
 https://github.com/MylesRM/101485291-lab-test2-comp3133
 
@@ -39,7 +39,7 @@ https://github.com/MylesRM/101485291-lab-test2-comp3133
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * Angular 
 * TypeScript
@@ -49,14 +49,14 @@ https://github.com/MylesRM/101485291-lab-test2-comp3133
 
 ---
 
-## 📡 API Used
+## API Used
 
 Harry Potter API:
 https://hp-api.onrender.com/
 
 ---
 
-## 🧱 Project Structure
+## Project Structure
 
 src/app/
 
