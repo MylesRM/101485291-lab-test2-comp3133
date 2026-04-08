@@ -144,7 +144,7 @@ This project is deployed using Vercel.
 
 ## Screenshots
 
-No screen shots I could only get a blank screen to display 
+(blank.png)
 
 ---
 
