@@ -12,48 +12,149 @@ ng serve
 
 Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+# Harry Potter Explorer (COMP 3133 Lab Test 2)
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+This Angular application displays Harry Potter data including characters, houses, and spells using a public API.
 
-```bash
-ng generate component component-name
+---
+
+## 🌐 Live Demo
+
+https://101485291-lab-test2-comp3133.vercel.app/
+---
+
+## 📂 GitHub Repository
+
+https://github.com/MylesRM/101485291-lab-test2-comp3133
+
+---
+
+## Intended Features
+
+* View a list of Harry Potter characters
+* Filter characters by Hogwarts house
+* View detailed information for each character
+* Browse a list of spells
+* Responsive UI with basic styling
+
+---
+
+## 🛠️ Technologies Used
+
+* Angular 
+* TypeScript
+* Reactive Forms & Template Forms
+* HTTP Client (API calls)
+* CSS
+
+---
+
+## 📡 API Used
+
+Harry Potter API:
+https://hp-api.onrender.com/
+
+---
+
+## 🧱 Project Structure
+
+src/app/
+
+* app.ts / app.html / app.css
+* app.routes.ts
+* app.config.ts
+
+components/
+
+* character-list/
+* character-filter/
+* character-details/
+* spell-list/
+
+services/
+
+* hp-api.ts
+
+models/
+
+* character.ts
+* spell.ts
+
+pipes/
+
+* house-label.ts
+
+---
+
+##  Requirements Implemented
+
+* Angular application using latest version
+* Service to fetch API data
+* Multiple components (Character List, Filter, Details, Spells)
+* Search/filter feature (filter by house)
+* TypeScript interfaces/models
+* Custom pipe (house label)
+* Angular features:
+
+  * @for
+  * @if
+  * @switch
+  * signal
+
+
+## ▶ How to Run Locally
+
+1. Clone the repository
+
+git clone https://github.com/MylesRM/101485291-lab-test2-comp3133.git
+
+2. Install dependencies
+
+```
+npm install
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+3. Run the app
 
-```bash
-ng generate --help
+```
+ng serve
 ```
 
-## Building
+4. Open in browser
 
-To build the project run:
+```
+http://localhost:4200
+```
 
-```bash
+---
+
+##  Build
+
+```
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## Deployment
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+This project is deployed using Vercel.
 
-```bash
-ng test
-```
+---
 
-## Running end-to-end tests
+## Screenshots
 
-For end-to-end (e2e) testing, run:
+No screen shots I could only get a blank screen to display 
 
-```bash
-ng e2e
-```
+---
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Notes
 
-## Additional Resources
+* Ran into difficulties that I could not remedy can only display blank screen
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+## Author
+
+Myles Romans Muirhead
+
