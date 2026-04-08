@@ -1,0 +1,24 @@
+@if (loading()) {
+  <p>Loading details...</p>
+} @else if (character()) {
+  <div class="details-card">
+    <img
+      [src]="character()!.image || 'https://via.placeholder.com/250x350?text=No+Image'"
+      [alt]="character()!.name"
+    >
+
+    <div class="info">
+      <h2>{{ character()!.name }}</h2>
+      <p><strong>Species:</strong> {{ character()!.species }}</p>
+      <p><strong>House:</strong> {{ character()!.house || 'No House' }}</p>
+      <p><strong>Wizard:</strong> {{ character()!.wizard }}</p>
+      <p><strong>Ancestry:</strong> {{ character()!.ancestry || 'Unknown' }}</p>
+      <p><strong>Actor:</strong> {{ character()!.actor || 'Unknown' }}</p>
+      <p><strong>Wand Wood:</strong> {{ character()!.wand?.wood || 'Unknown' }}</p>
+      <p><strong>Wand Core:</strong> {{ character()!.wand?.core || 'Unknown' }}</p>
+      <p><strong>Wand Length:</strong> {{ character()!.wand?.length || 'Unknown' }}</p>
+    </div>
+  </div>
+} @else {
+  <p>Character not found.</p>
+}

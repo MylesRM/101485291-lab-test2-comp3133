@@ -1,0 +1,21 @@
+.header {
+  background: #1f2937;
+  color: white;
+  padding: 16px;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+a {
+  color: #facc15;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.page {
+  padding: 20px;
+}

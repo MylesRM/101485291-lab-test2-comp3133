@@ -1,0 +1,31 @@
+<h2>Filter Characters by House</h2>
+
+<form [formGroup]="filterForm" (ngSubmit)="onFilter()" class="filter-box">
+  <label for="house">Choose House:</label>
+  <select id="house" formControlName="house">
+    @for (house of houses; track house) {
+      <option [value]="house">{{ house }}</option>
+    }
+  </select>
+
+  <button type="submit">Filter</button>
+</form>
+
+@if (loading()) {
+  <p>Loading filtered characters...</p>
+} @else {
+  <div class="grid">
+    @for (character of filteredCharacters(); track character.id) {
+      <div class="card">
+        <img
+          [src]="character.image || 'https://via.placeholder.com/250x350?text=No+Image'"
+          [alt]="character.name"
+        >
+        <h3>{{ character.name }}</h3>
+        <p>Actor: {{ character.actor || 'Unknown' }}</p>
+        <p>{{ character.house || 'No House' }}</p>
+        <a [routerLink]="['/details', character.id]">View Details</a>
+      </div>
+    }
+  </div>
+}

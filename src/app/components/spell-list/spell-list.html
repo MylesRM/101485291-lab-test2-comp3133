@@ -1,0 +1,14 @@
+<h2>Spells</h2>
+
+@if (loading()) {
+  <p>Loading spells...</p>
+} @else {
+  <div class="spell-grid">
+    @for (spell of spells(); track spell.id) {
+      <div class="spell-card">
+        <h3>{{ spell.name }}</h3>
+        <p>{{ spell.description }}</p>
+      </div>
+    }
+  </div>
+}

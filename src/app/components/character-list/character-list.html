@@ -1,0 +1,42 @@
+<h2>All Characters</h2>
+
+@if (loading()) {
+  <p>Loading characters...</p>
+} @else if (error()) {
+  <p>{{ error() }}</p>
+} @else {
+  <div class="grid">
+    @for (character of characters(); track character.id) {
+      <div class="card">
+        <img
+          [src]="character.image || 'https://via.placeholder.com/250x350?text=No+Image'"
+          [alt]="character.name"
+        >
+
+        <h3>{{ character.name }}</h3>
+        <p>{{ character.house | houseLabel }}</p>
+
+        @switch (character.house) {
+          @case ('Gryffindor') {
+            <span class="badge gryffindor">Gryffindor</span>
+          }
+          @case ('Slytherin') {
+            <span class="badge slytherin">Slytherin</span>
+          }
+          @case ('Hufflepuff') {
+            <span class="badge hufflepuff">Hufflepuff</span>
+          }
+          @case ('Ravenclaw') {
+            <span class="badge ravenclaw">Ravenclaw</span>
+          }
+          @default {
+            <span class="badge unknown">No House</span>
+          }
+        }
+
+        <br><br>
+        <a [routerLink]="['/details', character.id]">View Details</a>
+      </div>
+    }
+  </div>
+}
