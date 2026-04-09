@@ -144,7 +144,7 @@ This project is deployed using Vercel.
 
 ## Screenshots
 
-(blank.png)
+![](screenshots/blank.png)
 
 ---
 
